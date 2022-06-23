@@ -3,7 +3,8 @@ body, html{
 }
 body{
   margin: 0px;
-  background-image: url('https://st4.depositphotos.com/18803028/29772/i/450/depositphotos_297720654-stock-photo-abstract-space-dark-background.jpg');
+  background-image: url('https://images.unsplash.com/photo-1534796636912-3b95b3ab5986?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80');
+  background-size: 100%;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -47,4 +48,61 @@ body, a:link, a:visited, a:active{
     border: 10px solid black;
     transform: rotate(180deg);
     transition: transform 0.7s linear;
+}
+
+.sun{
+  width: 100px;
+  height: 100px;
+  background: yellow;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  box-shadow: 0px 0px 6px 6px #494949;
+  z-index: 1;
+}
+
+.saturn{
+  width: 40px;
+  height: 40px;
+  background: blue;
+  border-radius: 50%;
+  position: absolute;
+  left: -300px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  transition: all 3s;
+  transform: rotate3d(0deg, 0deg, 0deg) scale(1);
+  animation: rotate 3s infinite ease-in-out;
+}
+
+@keyframes rotate {
+  0% {
+      left: -300px;
+      z-index: 3;
+      transform: scale(1);
+  }
+
+  25% {
+      transform: scale(1.2);
+  }
+
+  50% {
+      left: 300px;
+      transform: scale(1);
+  }
+
+  75% {
+      transform: scale(.8);
+  }
+
+  100% {
+      left: -300px;
+      z-index: -1;
+  }
 }
