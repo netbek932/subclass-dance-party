@@ -11,7 +11,7 @@ body, a:link, a:visited, a:active{
 }
 .title, .addDancerButton{
   padding:5px 12px;
-  float:right;
+  float:left;
 }
 .topbar{
   height:32px;
@@ -24,4 +24,27 @@ body, a:link, a:visited, a:active{
   border:10px solid red;
   border-radius:10px;
   position:absolute;
+}
+
+.blinky{
+  width: 30px;
+  height: 30px;
+  border:10px solid red;
+  border-radius:10px;
+  position:absolute;
+}
+
+.silly{
+  border: 10px solid green;
+  border-radius: 10px;
+  position: absolute;
+}
+
+.rational{
+  position: relative;
+    width: 30px;
+    height: 30px;
+    border: 10px solid black;
+    transform: rotate(180deg);
+    transition: transform 0.7s linear;
 }

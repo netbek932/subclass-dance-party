@@ -26,10 +26,15 @@ Dancer.prototype.setPosition = function(top, left) {
   this.$node.css(styleSettings);
 };
 
+Dancer.prototype.lineUp = function() {
+  this.$node.animate({
+    left: 0
+  });
+};
 
 
 /* FUNCTIONAL INSTANTIAION
-// Creates and returns a new dancer object that can step
+// Creates and returns a new dancer object that can stepsu
 var makeDancer = function(top, left, timeBetweenSteps) {
 
   var dancer = {};
