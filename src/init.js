@@ -29,6 +29,10 @@ $(document).ready(function() {
     );
     window.dancers.push(dancer);
     $('body').append(dancer.$node);
+
+    $('.sun').mouseover(function() {
+      $(this).css('background', 'red');
+    });
   });
 
   $('.lineUpButton').on('click', function(event) {
